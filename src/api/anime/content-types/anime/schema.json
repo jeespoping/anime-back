@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animes",
+  "info": {
+    "singularName": "anime",
+    "pluralName": "animes",
+    "displayName": "anime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "summer": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "uid"
+    },
+    "poster": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "screenshots": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type.type",
+      "inversedBy": "anime"
+    }
+  }
+}

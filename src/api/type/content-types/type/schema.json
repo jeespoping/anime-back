@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "anime": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::anime.anime",
+      "mappedBy": "types"
+    }
+  }
+}
