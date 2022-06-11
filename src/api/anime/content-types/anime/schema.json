@@ -21,7 +21,8 @@
       "required": true
     },
     "url": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
     "poster": {
       "type": "media",
@@ -38,12 +39,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "types": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::type.type",
-      "inversedBy": "anime"
     }
   }
 }

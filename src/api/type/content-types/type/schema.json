@@ -19,12 +19,6 @@
     "url": {
       "type": "uid",
       "targetField": "title"
-    },
-    "anime": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::anime.anime",
-      "mappedBy": "types"
     }
   }
 }
