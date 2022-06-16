@@ -19,6 +19,24 @@
     "url": {
       "type": "uid",
       "targetField": "title"
+    },
+    "anime": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::anime.anime",
+      "inversedBy": "types"
+    },
+    "chapters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chapter.chapter",
+      "mappedBy": "type"
+    },
+    "seasons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::season.season",
+      "mappedBy": "type"
     }
   }
 }

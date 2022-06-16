@@ -39,6 +39,28 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true
+    },
+    "chapters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chapter.chapter",
+      "mappedBy": "anime"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type.type",
+      "mappedBy": "anime"
+    },
+    "seasons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::season.season",
+      "mappedBy": "anime"
     }
   }
 }

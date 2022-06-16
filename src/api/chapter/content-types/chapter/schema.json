@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapters",
+  "info": {
+    "singularName": "chapter",
+    "pluralName": "chapters",
+    "displayName": "Chapter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "anime": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::anime.anime",
+      "inversedBy": "chapters"
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type.type",
+      "inversedBy": "chapters"
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "Canon",
+        "Mixto",
+        "Relleno",
+        "Novela"
+      ]
+    },
+    "video": {
+      "type": "text",
+      "required": true
+    },
+    "season": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::season.season",
+      "inversedBy": "chapters"
+    },
+    "orden": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
