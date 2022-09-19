@@ -54,6 +54,12 @@
     "orden": {
       "type": "integer",
       "required": true
+    },
+    "introini": {
+      "type": "float"
+    },
+    "introfinish": {
+      "type": "float"
     }
   }
 }
