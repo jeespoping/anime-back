@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "watchings",
+  "info": {
+    "singularName": "watching",
+    "pluralName": "watchings",
+    "displayName": "Watching"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "second": {
+      "type": "float"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "watchings"
+    },
+    "chapter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::chapter.chapter",
+      "inversedBy": "watchings"
+    }
+  }
+}
