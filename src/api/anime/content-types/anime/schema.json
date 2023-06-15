@@ -61,6 +61,12 @@
       "relation": "oneToMany",
       "target": "api::season.season",
       "mappedBy": "anime"
+    },
+    "favorites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::favorite.favorite",
+      "mappedBy": "anime"
     }
   }
 }

@@ -68,6 +68,12 @@
       "relation": "oneToMany",
       "target": "api::watching.watching",
       "mappedBy": "user"
+    },
+    "favorites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::favorite.favorite",
+      "mappedBy": "user"
     }
   }
 }
