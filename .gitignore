@@ -115,3 +115,4 @@ exports
 build
 .strapi-updater.json
 yarn.lock
+awsanimecol.pem
