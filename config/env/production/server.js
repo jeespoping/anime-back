@@ -4,10 +4,10 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  url: "https://anime-back.up.railway.app/", // I was referring to this one
+  url: "https://anime-back-production.up.railway.app/", // I was referring to this one
   proxy: true, // This makes Strapi (and therefore the Koa instance) aware of the proxy.
   admin: {
-    url: "https://anime-back.up.railway.app/admin/",
+    url: "https://anime-back-production.up.railway.app/admin/",
     autoOpen: false,
   },
 });
