@@ -27,7 +27,7 @@ module.exports = ({ env }) => [
       },
     },
   },
-  {
+  /* {
     name: "strapi::cors",
     config: {
       origin: ["https://nimecol-front.up.railway.app", "http://localhost:1337"],
@@ -35,5 +35,5 @@ module.exports = ({ env }) => [
       headers: ["Content-Type", "Authorization", "Origin", "Accept"],
       keepHeaderOnError: true,
     },
-  },
+  }, */
 ];
