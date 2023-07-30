@@ -27,13 +27,4 @@ module.exports = ({ env }) => [
       },
     },
   },
-  {
-    name: "strapi::cors",
-    config: {
-      origin: ["animecol.com"],
-      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
-      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
-      keepHeaderOnError: true,
-    },
-  },
 ];
